@@ -1,0 +1,7 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="Demon.MarkerOfMan"
+	Height="50" Width="50" Opacity="10">
+    <Image Name="icon" Source="passenger.jpg" VerticalAlignment="Center" HorizontalAlignment="Center" />
+</UserControl>
