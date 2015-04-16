@@ -103,9 +103,10 @@ namespace Demon
             Marker.ZIndex += 10000;
             //Popup.IsOpen = true;
             Random randID = new Random();
-            MarkerOfCar msender = sender as MarkerOfCar; 
-            MainWindow.TbOfID.Text = msender.Marker.Tag.ToString();
-            MainWindow.TbOfLatlng.Text = msender.Marker.Position.ToString();//randID.Next().ToString() + "  " + randID.Next().ToString();
+            MarkerOfCar msender = sender as MarkerOfCar;
+            CarRecord carTag = msender.Marker.Tag as CarRecord;
+            MainWindow.TbOfID.Text = carTag.carId.ToString();
+            MainWindow.TbOfLatlng.Text = "东经" + carTag.longitude.ToString() + " 北纬" + carTag.latitude.ToString();//msender.Marker.Position.ToString();//randID.Next().ToString() + "  " + randID.Next().ToString();
             MainWindow.TbOfType.Text = "出租车";
         }
     }

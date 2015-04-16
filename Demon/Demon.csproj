@@ -34,18 +34,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GemBox.Spreadsheet, Version=39.3.30.1000, Culture=neutral, PublicKeyToken=b1b72c69714d4847, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>F:\Users\MENG\Documents\visual studio 2012\Projects\Traveller - v1.2\Traveller\GemBox.Spreadsheet.dll</HintPath>
-    </Reference>
     <Reference Include="GMap.NET.Core">
       <HintPath>F:\Users\MENG\Documents\visual studio 2012\Projects\TryGmapNet\TryGmapNet\NETv4.0\GMap.NET.Core.dll</HintPath>
     </Reference>
     <Reference Include="GMap.NET.WindowsPresentation">
       <HintPath>F:\Users\MENG\Documents\visual studio 2012\Projects\TryGmapNet\TryGmapNet\NETv4.0\GMap.NET.WindowsPresentation.dll</HintPath>
     </Reference>
-    <Reference Include="MongoDB">
-      <HintPath>.\MongoDB.dll</HintPath>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\..\CSharpDriver-2.0.0\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>..\..\CSharpDriver-2.0.0\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core">
+      <HintPath>..\..\CSharpDriver-2.0.0\MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Legacy">
+      <HintPath>..\..\CSharpDriver-2.0.0\MongoDB.Driver.Legacy.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -66,7 +71,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CarRecord.cs" />
     <Compile Include="MapControl.cs" />
+    <Compile Include="SimuTrans.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
